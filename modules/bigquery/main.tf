@@ -1,4 +1,4 @@
-
+#######
 locals {
   tables          = { for table in var.tables : table["table_id"] => table }
   views           = { for view in var.views : view["view_id"] => view }
