@@ -1,5 +1,5 @@
 /**
- * Copyright 2019 Google LLC
+ * Copyright 2021 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,17 +14,18 @@
  * limitations under the License.
  */
 
-output "bigquery_dataset" {
-  value       = module.example.bigquery_dataset
-  description = "Bigquery dataset resource."
-}
+terraform {
+  required_version = ">= 0.13"
+  required_providers {
 
-output "bigquery_tables" {
-  value       = module.example.bigquery_tables
-  description = "Map of bigquery table resources being provisioned."
-}
+    google = {
+      source  = "hashicorp/google"
+      version = "~> 3.63"
+    }
+  }
 
-output "bigquery_external_tables" {
-  value       = module.example.bigquery_external_tables
-  description = "Map of bigquery table resources being provisioned."
+  provider_meta "google" {
+    module_name = "blueprints/terraform/terraform-google-bigquery/v5.2.0"
+  }
+
 }
