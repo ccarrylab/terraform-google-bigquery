@@ -2,8 +2,8 @@
 
 module "bigquery" {
   source                     = "git::https://github.com/ccarrylab/terraform-google-bigquery//modules/bigquery"
-  dataset_id                 = "food"
-  dataset_name               = "food"
+  dataset_id                 = "food2021"
+  dataset_name               = "food2021"
   description                = "some description 2021"
   project_id                 = "level-storm-330413"
   location                   = "US"
