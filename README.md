@@ -25,7 +25,7 @@ Basic usage of this module is as follows:
 
 ```hcl
 module "bigquery" {
-  source  = "terraform-google-modules/bigquery/google"
+  source  = "github.com/ccarrylab/terraform-google-bigquery"
   version = "~> 4.4"
 
   dataset_id                  = "foo"
