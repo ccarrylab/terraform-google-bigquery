@@ -15,7 +15,7 @@
  */
 
 module "bigquery" {
-  source                     = "../.."
+  source                     = "git::https://github.com/ccarrylab/terraform-google-bigquery//modules/bigquery"
   dataset_id                 = "foo"
   dataset_name               = "foo"
   description                = "some description"
