@@ -2,8 +2,8 @@
 
 module "bigquery" {
   source                     = "git::https://github.com/ccarrylab/terraform-google-bigquery//modules/bigquery"
-  dataset_id                 = "food2021"
-  dataset_name               = "food2021"
+  dataset_id                 = "food2022"
+  dataset_name               = "food2022"
   description                = "some description 2021"
   project_id                 = "level-storm-330413"
   location                   = "US"
@@ -19,13 +19,13 @@ module "bigquery" {
       labels = {
         env      = "devops"
         billable = "true"
-        owner    = "joedoe"
+        owner    = "devopssupport"
       },
     }
   ]
   dataset_labels = {
     env      = "dev"
     billable = "true"
-    owner    = "janesmith"
+    owner    = "devopssupport"
   }
 }
