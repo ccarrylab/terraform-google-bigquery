@@ -16,10 +16,10 @@
 
 module "bigquery" {
   source                     = "git::https://github.com/ccarrylab/terraform-google-bigquery//modules/bigquery"
-  dataset_id                 = "foo"
-  dataset_name               = "foo"
-  description                = "some description"
-  project_id                 = var.project_id
+  dataset_id                 = "food"
+  dataset_name               = "food"
+  description                = "some description 2021"
+  project_id                 = "level-storm-330413"
   location                   = "US"
   delete_contents_on_destroy = var.delete_contents_on_destroy
   tables = [
