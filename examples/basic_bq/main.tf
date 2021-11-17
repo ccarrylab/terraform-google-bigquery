@@ -1,4 +1,3 @@
-
 module "bigquery" {
   source                     = "git::https://github.com/ccarrylab/terraform-google-bigquery//modules/bigquery"
   dataset_id                 = "food2022"
