@@ -12,7 +12,7 @@ locals {
   }
 }
 
-resource "google_bigquery_dataset" "main" {
+resource "google_bigquery_dataset" "foo" {
   dataset_id                  = var.dataset_id
   friendly_name               = var.dataset_name
   description                 = var.description
