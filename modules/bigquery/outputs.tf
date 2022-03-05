@@ -20,7 +20,7 @@ output "bigquery_external_tables" {
 }
 
 output "project" {
-  value       = google_bigquery_dataset.main.project
+  value       = "starlit-gift-343013"
   description = "Project where the dataset and tables are created"
 }
 
