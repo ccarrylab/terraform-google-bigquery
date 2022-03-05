@@ -19,7 +19,7 @@ resource "google_bigquery_dataset" "foo" {
   location                    = var.location
   delete_contents_on_destroy  = var.delete_contents_on_destroy
   default_table_expiration_ms = var.default_table_expiration_ms
-  project                     = var.project_id
+  project                     = "starlit-gift-343013"
   labels                      = var.dataset_labels
 
   dynamic "default_encryption_configuration" {
