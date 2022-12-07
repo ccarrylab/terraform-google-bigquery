@@ -3,10 +3,10 @@
 
 module "bigquery" {
   source                     = "git::https://github.com/ccarrylab/terraform-google-bigquery//modules/bigquery"
-  dataset_id                 = "food2022"
-  dataset_name               = "food2022"
-  description                = "some description 2021"
-  project_id                 = "level-storm-330413"
+  dataset_id                 = "GTS2022"
+  dataset_name               = "GTS2022"
+  description                = "GTS Bigquery 2022"
+  project_id                 = "citric-sprite-370915"
   location                   = "US"
   delete_contents_on_destroy = var.delete_contents_on_destroy
   tables = [
